@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Page</title>
+
+  <!-- This connects/links my  html page to my css  stylesheet page .-->
+  <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+
+  <!--This link is used for the purpose of font awesome which is done  via w3schools-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--This link is used for the purpose of font awesome which is done  via w3schools-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- This link allows jquery to function/activate on my browser -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+
+  #placeholder{
+    color: gray;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    padding-top: 180px;
+    background-color: lightgray;
+  }
+
+  #placeholder h2 {
+    color:black;
+  }
+
+  iframe{
+    width: 100%;
+    height: 600px;
+    padding-top: 10px;
+  }
+
+  /*Contact holder of information*/
+
+  #contact_holder{
+    height: 400px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  /*aligned section with a width of 70% to the left of the browser*/
+
+  #contact_holder section{
+    width: 50%;
+    color: gray;
+    float: left;
+    height: 350px;
+    padding-left: 10%;
+  }
+
+  /*the inside of the form input*/
+
+  .form_input{
+    margin-right: 46px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+  }
+
+
+  #contact_holder aside{
+    width: 40%;
+    color: gray;
+    float: left;
+    height: 350px;
+  }
+
+  #contact_holder aside ul{
+    list-style-type: none;
+  }
+
+  #contact_holder aside h2{
+    padding-left: 40px;
+  }
+
+  #contact_holder aside p{
+    padding-left: 40px;
+  }
+
+  /*targeting the button section of the footer holder.a width of 30px
+  and padding applied to the entire perimeter of the button*/
+
+  #contact_holder button {
+    width: 30px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+
+  /*button styling width,height*/
+  #contact_holder section .ibutton{
+    width: 130px;
+    height: 30px;
+    background-color: rgb(188,55,55);
+    color: white;
+  }
+
+  #contact_holder section .ibutton:hover{
+    width: 165px;
+    height: 45px;
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <!--This ("Collective_first_div")  is my containor .It consist of more divs within it ,
+  this will occupy the top  section of my home page.The top section Consist of a  logo
+  which is on the top left,a centered navbar and a search engine aligned to the top right -->
+
+  <div id="Collective_first_div">
+
+    <!-- Logo image  code4ct apears to the top left -->
+
+    <div id="logo_image">
+      <img src="images\code4ct_logo.jpg" alt="code4ct_logo" width="150px" height="80px">
+    </div>
+
+    <!-- Horizontal and centered navbar ,consist of unordered list as well as an anchor tag .
+    This results into the navbars listed items to  being hyperlinks  -->
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="JS_project.html">HOME</a></li>
+        <li><a href="Portfolio_page.html">PORTFOLIO</a></li>
+        <li><a href="About_page.html">ABOUT</a></li>
+        <li><a href="Contact_page.html">CONTACT</a></li>
+        <li><a href="Courses_page.html">COURSE</a></li>
+      </ul>
+    </nav>
+
+    <!-- Top right placed  search engine... ,created within a form tag ,As a input(text) field.
+    Attached to the right is a button with image (pink search icon)-->
+
+    <form id="search_engine">
+      <input type="text" name="email" placeholder="Search here..."><button><img src="images\search pink logo.png" alt="" width="13px" height="10px"></button>
+    </form>
+  </div>
+
+  <!-- breadcrumb section of the portfolio page -->
+
+  <div id="placeholder">
+    <h2>CONTACT US</h2>
+  </div>
+
+  <!-- contact holder  -->
+
+  <div id="contact_holder">
+
+    <section>
+      <h2><span class="red_underline">Send</span><span class="gray_underline"> Us a Message</span></h2>
+
+      <form>
+        <input id="name_form" class="form_input" type="text" name="text" placeholder=" Your Name ">
+        <input id="email_form" class="form_input" type="email" name="email" placeholder=" Your Email ">
+        <input id="phone_form" class="form_input" type="tel" name="tel" placeholder=" Phone Number ">
+
+        <textarea id="text_form" cols="85" rows="10" placeholder="Your Message"></textarea>
+        <br><br>
+      </form>
+      <button id="form_button" class="ibutton">Send Email</button>
+    </section>
+
+    <!--aligned right contact information   -->
+
+    <aside>
+      <h2><span class="red_underline">Con</span><span class="gray_underline">tact Info</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul>
+          <li><button><i class="fa fa-phone" style="font-size:15px;color:gray"></i></button>(021) 685 0991</li>
+          <li><button><i class="fa fa-envelope" style="font-size:15px;color:gray"></i></button>info@code4ct.com</li>
+          <li></li>
+          <li><button><i class="fa fa-map-marker" style="font-size:15px;color:gray"></i></button>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915 </li>
+        </ul>
+    </aside>
+
+    </div>
+
+    <!-- this is for the google map  -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.638062446006!2d18.44652591483123!3d-33.924713680640664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d9854044ed9%3A0x6a0ebf49da5aabab!2sCodeSpace!5e0!3m2!1sen!2sza!4v1510922658218" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <!-- footer top containing information that i inserted within a table for better positioning -->
+
+    <div id="footer_holder">
+
+      <table>
+        <tr>
+          <td><h2>Legal</h2></td>
+          <td><h2>Company</h2></td>
+          <td><h2>Help & Support</h2></td>
+          <td><h2>Contact</h2></td>
+        </tr>
+
+        <tr>
+          <td>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</td>
+          <td>
+            <ul type="square">
+              <li>About us</li>
+              <li>Contact us</li>
+              <li>Blog</li>
+              <li>Testimonials</li>
+              <li>Affiliate program</li>
+            </ul>
+          </td>
+
+          <td>
+            <ul type="square">
+              <li>Help centre</li>
+              <li>Free simple template</li>
+              <li>Refund policy</li>
+              <li>Report span</li>
+            </ul>
+          </td>
+
+          <td id="removing_list">
+            <ul>
+              <li><button><i class="fa fa-phone" style="font-size:15px;color:gray"></i></button> (021) 685 0991</li>
+              <li><button><i class="fa fa-envelope" style="font-size:15px;color:gray"></i></button> info@code4ct.com</li>
+              <li><button><i class="fa fa-map-marker" style="font-size:15px;color:gray"></i></button> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915 </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+
+    <!-- footer section done through a table method for better positioning -->
+
+    <footer id="footer_section">
+      <table>
+        <tr>
+          <td id="footer_aligned_left">
+            <p>copyright 2017 PRIVATE POLICY</p>
+          </td>
+
+          <td id="footer_aligned_center"><i class="fa fa-hand-pointer-o"></i> <a class="scrollToTop" href="#">Scrolling Up</a></td>
+
+          <td id="footer_aligned_right">
+            Follow us:
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+          </td>
+        </tr>
+      </table>
+    </footer>
+
+    <script type="text/javascript">
+
+      // to see if text field is empty,it will alert a Message
+      $(document).ready(function(){
+       $("#form_button").click(function(){
+          var email = $("#email_form").val();
+          var name = $("#name_form").val();
+          var number = $("#phone_form").val();
+          var text = $("#text_form").val();
+           if(email == "" ||  name == "" || number == ""||  text == ""){
+            alert("incomplete form...")
+          }
+       });
+      });
+
+      // this is used fo the smooth scroller
+      if ($('.scrollToTop')[0]){
+           $('.scrollToTop').click(function(){
+           $('html,body').animate({ scrollTop: 0 }, 3000);
+         });
+        }
+
+    </script>
+  </body>
+  </html>

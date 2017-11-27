@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfoli Page</title>
+
+  <!-- This connects/links my  html page to my css  stylesheet page .-->
+  <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+
+  <!--This link is used for the purpose of font awesome which is done  via w3schools-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- This link allows jquery to function/activate on my browser -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+  #placeholder{
+    color: gray;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    padding-top: 180px;
+    background-color: lightgray;
+  }
+
+  #placeholder h2 ,h3{
+    color:black;
+  }
+
+
+
+  #portfolio_content{
+    color:gray;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    padding-top: 30px;
+  }
+
+  #portfolio_image_holder{
+    height: 800px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #portfolio_image_holder img:active{
+      transform: scale(2);
+  }
+
+  </style>
+</head>
+<body>
+
+  <!--This ("Collective_first_div")  is my containor .It consist of more divs within it ,
+  this will occupy the top  section of my home page.The top section Consist of a  logo
+  which is on the top left,a centered navbar and a search engine aligned to the top right -->
+
+  <div id="Collective_first_div" id="#">
+
+    <!-- Logo image  code4ct apears to the top left -->
+
+    <div id="logo_image">
+      <img src="images\code4ct_logo.jpg" alt="code4ct_logo" width="150px" height="80px">
+    </div>
+
+    <!-- Horizontal and centered navbar ,consist of unordered list as well as an anchor tag .
+    This results into the navbars listed items to  being hyperlinks  -->
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="JS_project.html">HOME</a></li>
+        <li><a href="Portfolio_page.html">PORTFOLIO</a></li>
+        <li><a href="About_page.html">ABOUT</a></li>
+        <li><a href="Contact_page.html">CONTACT</a></li>
+        <li><a href="Courses_page.html">COURSE</a></li>
+      </ul>
+    </nav>
+
+    <!-- Top right placed  search engine... ,created within a form tag ,As a input(text) field.
+    Attached to the right is a button with image (pink search icon)-->
+
+    <form id="search_engine">
+      <input type="text" name="email" placeholder="Search here..."><button><img src="images\search pink logo.png" alt="" width="13px" height="10px"></button>
+    </form>
+  </div>
+
+  <!-- breadcrumb section of the portfolio page -->
+
+  <div id="placeholder">
+    <h2>Our Portfolio</h2>
+  </div>
+
+  <!--  portfolio content-->
+
+  <div id="portfolio_content">
+    <h3><span class="gray_underline">Our Awe<span class="red_underline">some</span> Portfolio</span></h3>
+    <p>These are skills that everyone should have. Even if you have no intention of becoming a professional coder, you will benefit from knowing how to think in this way in this increasingly computerized economy.</p>
+  </div>
+
+  <!-- this is my gallery -->
+
+  <div id="portfolio_image_holder">
+
+   <table>
+     <tr>
+        <td><div><img src="images\cover2.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\cover.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\cover1.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\cover3.jpg" alt="" width="325px" height="250px"></div></td>
+     </tr>
+
+     <tr>
+        <td><div><img src="images\team_1.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\team_2.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\about.icon.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\gallery.4.jpg" alt="" width="325px" height="250px"></div></td>
+     </tr>
+
+     <tr>
+        <td><div><img src="images\gallery.1.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\about2.icon.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\gallery.2.jpg" alt="" width="325px" height="250px"></div></td>
+        <td><div><img src="images\gallery.3.jpg" alt="" width="325px" height="250px"></div></td>
+    </tr>
+    </table>
+
+  </div>
+
+  <div id='carousel_container'>
+
+    <div id='carousel_inner'>
+
+      <!--unordered list   -->
+      <ul id='carousel_ul'>
+
+        <!-- listed images with a hyperlink -->
+
+        <li><a href='#'><img src='images\slider.jpg'></a></li>
+        <li><a href='#'><img src='images\slider1.jpg'></a></li>
+        <li><a href='#'><img src='images\slider2.jpg'></a></li>
+        <li><a href='#'><img src='images\slider3.jpg'></a></li>
+        <li><a href='#'><img src='images\slider4.jpg'></a></li>
+        <li><a href='#'><img src='images\slider5.jpg'></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="footer_holder">
+
+    <table>
+      <tr>
+        <td><h2>Legal</h2></td>
+        <td><h2>Company</h2></td>
+        <td><h2>Help & Support</h2></td>
+        <td><h2>Contact</h2></td>
+      </tr>
+
+      <tr>
+        <td>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</td>
+
+        <td>
+          <ul type="square">
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Blog</li>
+            <li>Testimonials</li>
+            <li>Affiliate program</li>
+          </ul>
+        </td>
+
+        <td>
+          <ul type="square">
+            <li>Help centre</li>
+            <li>Free simple template</li>
+            <li>Refund policy</li>
+            <li>Report span</li>
+          </ul>
+        </td>
+
+        <td id="removing_list">
+          <ul>
+            <li><button><i class="fa fa-phone" style="font-size:15px;color:gray"></i></button> (021) 685 0991</li>
+            <li><button><i class="fa fa-envelope" style="font-size:15px;color:gray"></i></button> info@code4ct.com</li>
+            <li><button><i class="fa fa-map-marker" style="font-size:15px;color:gray"></i></button> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915 </li>
+          </ul>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+  <!-- footer section done through a table method for better positioning -->
+
+  <footer id="footer_section">
+    <table>
+      <tr>
+        <td id="footer_aligned_left">
+          <p>copyright 2017 PRIVATE POLICY</p>
+        </td>
+
+        <td id="footer_aligned_center"><i class="fa fa-hand-pointer-o"></i> <a class="scrollToTop" href="#">Scrolling Up</a></td>
+
+        <td id="footer_aligned_right">
+          Follow us:
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </td>
+      </tr>
+    </table>
+  </footer>
+
+  <script>
+  // cariousal JQuery functionality
+
+  $(document).ready(function() {
+
+    //options( 1 - ON , 0 - OFF)
+    var auto_slide = 1;
+    var hover_pause = 1;
+    var key_slide = 1;
+
+    //speed of auto slide(
+    var auto_slide_seconds = 0;
+    /* IMPORTANT: i know the variable is called ...seconds but it's
+    in milliseconds ( multiplied with 1000) '*/
+
+    /*move the last list item before the first item. The purpose of this is
+    if the user clicks to slide left he will be able to see the last item.*/
+    $('#carousel_ul li:first').before($('#carousel_ul li:last'));
+
+    //check if auto sliding is enabled
+    if(auto_slide == 1){
+      /*set the interval (loop) to call function slide with option 'right'
+      and set the interval time to the variable we declared previously */
+      var timer = setInterval('slide("right")', auto_slide_seconds);
+
+      /*and change the value of our hidden field that hold info about
+      the interval, setting it to the number of milliseconds we declared previously*/
+      $('#hidden_auto_slide_seconds').val(auto_slide_seconds);
+    }
+
+    //check if hover pause is enabled
+    if(hover_pause == 1){
+      //when hovered over the list
+      $('#carousel_ul').hover(function(){
+        //stop the interval
+        clearInterval(timer)
+      },function(){
+        //and when mouseout start it again
+        timer = setInterval('slide("right")', auto_slide_seconds);
+      });
+    }
+
+    //check if key sliding is enabled
+    if(key_slide == 1){
+
+      //binding keypress function
+      $(document).bind('keypress', function(e) {
+        //keyCode for left arrow is 37 and for right it's 39 '
+        if(e.keyCode==37){
+          //initialize the slide to left function
+          slide('left');
+        }else if(e.keyCode==39){
+          //initialize the slide to right function
+          slide('right');
+        }
+      });
+
+    }
+
+  });
+
+  //FUNCTIONS BELLOW
+
+  //slide function
+  function slide(where){
+
+    //get the item width
+    var item_width = $('#carousel_ul li').outerWidth() + 10;
+
+    /* using a if statement and the where variable check
+    we will check where the user wants to slide (left or right)*/
+    if(where == 'left'){
+      //...calculating the new left indent of the unordered list (ul) for left sliding
+      var left_indent = parseInt($('#carousel_ul').css('left')) + item_width;
+    }else{
+      //...calculating the new left indent of the unordered list (ul) for right sliding
+      var left_indent = parseInt($('#carousel_ul').css('left')) - item_width;
+
+    }
+
+    //make the sliding effect using jQuery's animate function... '
+    $('#carousel_ul:not(:animated)').animate({'left' : left_indent},3000,function(){
+
+      /* when the animation finishes use the if statement again, and make an ilussion
+      of infinity by changing place of last or first item*/
+      if(where == 'left'){
+        //...and if it slided to left we put the last item before the first item
+        $('#carousel_ul li:first').before($('#carousel_ul li:last'));
+      }else{
+        //...and if it slided to right we put the first item after the last item
+        $('#carousel_ul li:last').after($('#carousel_ul li:first'));
+      }
+
+      //...and then just get back the default left indent
+      $('#carousel_ul').css({'left' : '-210px'});
+    });
+  }
+
+  // this is used fo the smooth scroller
+  if ($('.scrollToTop')[0]){
+       $('.scrollToTop').click(function(){
+       $('html,body').animate({ scrollTop: 0 }, 3000);
+     });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Courses Page</title>
+
+    <!-- This connects/links my  html page to my css  stylesheet page .-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- This link allows jquery to function/activate on my browser -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--This link is used for the purpose of font awesome which is done  via w3schools-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+
+     /*placeholder*/
+     #breadcrumb{
+       padding-top: 150px;
+       background-color: gray;
+       text-align: center;
+       padding-bottom: 50px;
+     }
+
+     /* displaying th cart page fixed on to the browser on the left side of my browser
+       with a background gray and aligned text as well as a border*/
+
+     #cart_holder{
+       float: right;
+       background-color: white;
+       width: 30%;
+       text-align: center;
+       border: 2px solid black;
+       margin-right: 5%;
+       height: 340px;
+       box-shadow: 5px 5px 5px #333;
+       color:gray;
+       position: fixed;
+       margin-left: 900px;
+
+     }
+
+     #cart_holder h1{
+       color: black;
+     }
+
+     /*music cart paragraph*/
+     #music_holder p{
+       color:black;
+       text-align: center;
+     }
+
+     /*cart div holder*/
+     #courses_div_holder{
+       width: 100%;
+       height: 300px;
+       padding-top: 30px;
+       padding-bottom: 30px;
+     }
+
+     #courses_structure_holder{
+       width: 100%;
+       height: 300px;
+       padding-top: 30px;
+       padding-bottom: 30px;
+     }
+
+     #courses_structure1_holder{
+       width: 100%;
+       height: 300px;
+       padding-top: 30px;
+       padding-bottom: 30px;
+     }
+
+     /*music cart*/
+     #music_holder{
+       background-color: white;
+       color:black;
+       width: 25%;
+       text-align: center;
+       border: 2px solid black;
+       float: left;
+       margin-left: 5%;
+       box-shadow: 5px 5px 5px #333;
+     }
+
+    /*Web court*/
+     #web_pages{
+        background-color: white;
+        color:black;
+        width: 25%;
+        text-align: center;
+        border: 2px solid black;
+        float: left;
+        margin-left: 5%;
+        box-shadow: 5px 5px 5px #333;
+     }
+
+     /*animation court*/
+     #animation{
+       background-color: white;
+       color:black;
+       width: 25%;
+       text-align: center;
+       border: 2px solid black;
+       float: left;
+       margin-left: 5%;
+       box-shadow: 5px 5px 5px #333;
+     }
+
+     /*created web page*/
+     #created_web_page{
+       background-color: white;
+       color:black;
+       width: 25%;
+       text-align: center;
+       border: 2px solid black;
+       float: left;
+       margin-left: 5%;
+       box-shadow: 5px 5px 5px #333;
+     }
+
+     /*created music*/
+     #created_music_page{
+       background-color: white;
+       color:black;
+       width: 25%;
+       text-align: center;
+       border: 2px solid black;
+       float: left;
+       margin-left: 5%;
+       box-shadow: 5px 5px 5px #333;
+     }
+
+     /*created animation*/
+     #created_animation_page{
+       background-color: white;
+       color:black;
+       width: 25%;
+       text-align: center;
+       border: 2px solid black;
+       float: left;
+       margin-left: 5%;
+       box-shadow: 5px 5px 5px #333;
+     }
+
+     /*button styled in the music cart*/
+     #courses_div_holder button{
+       color:white;
+       background-color: black;
+       margin-left: 15px;
+       border-radius: 50%;
+       height: 100px;
+       width: 100px;
+     }
+
+     /*button hover*/
+     #courses_div_holder button:hover{
+       height: 100px;
+       width: 100px;
+       background-color: white;
+       color: black;
+     }
+
+     /*button styled in the music cart*/
+     #courses_structure_holder button{
+       color:white;
+       background-color: black;
+       margin-left: 15px;
+       border-radius: 50%;
+       height: 100px;
+       width: 100px;
+     }
+
+     /*button hover*/
+     #courses_structure_holder button:hover{
+       height: 100px;
+       width: 100px;
+       background-color: white;
+       color: black;
+     }
+
+     #courses_structure1_holder button{
+       color:white;
+       background-color: black;
+       margin-left: 15px;
+       border-radius: 50%;
+       height: 100px;
+       width: 100px;
+     }
+
+     #courses_structure1_holder button:hover{
+       height: 100px;
+       width: 100px;
+       background-color: white;
+       color: black;
+     }
+
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+    <!--This ("Collective_first_div")  is my containor .It consist of more divs within it ,
+    this will occupy the top  section of my home page.The top section Consist of a  logo
+    which is on the top left,a centered navbar and a search engine aligned to the top right -->
+
+    <div id="Collective_first_div">
+
+      <!-- Logo image  code4ct apears to the top left -->
+
+      <div id="logo_image">
+        <img src="C:\Users\Academy8\Desktop\JS_Project\JS_project.html\images\code4ct_logo.jpg" alt="code4ct_logo" width="200px" height="60px">
+      </div>
+
+      <!-- Horizontal and centered navbar ,consist of unordered list as well as an anchor tag .
+      This results into the navbars listed items to  being hyperlinks  -->
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="JS_project.html">HOME</a></li>
+          <li><a href="Portfolio_page.html">PORTFOLIO</a></li>
+          <li><a href="About_page.html">ABOUT</a></li>
+          <li><a href="Contact_page.html">CONTACT</a></li>
+          <li><a href="Courses_page.html">COURSE</a></li>
+        </ul>
+      </nav>
+
+      <!-- Top right placed  search engine... ,created within a form tag ,As a input(text) field.
+      Attached to the right is a button with image (pink search icon)-->
+
+      <form id="search_engine">
+        <input type="text" name="search" placeholder="Search..."><button><img src="images\search pink logo.png" alt="" width="13px" height="10px"></button>
+      </form>
+
+    </div>
+
+    <!-- placeholder section of the about page -->
+
+    <div id="breadcrumb">
+      <h2>Courses Page</h2>
+    </div>
+
+    <!-- div holder -->
+    <div id="courses_div_holder">
+
+        <section>
+           <!-- image above course -->
+
+           <!-- Music_holder for the courses section -->
+           <div id="music_holder">
+           </div>
+
+           <!-- Web pages courses section -->
+           <div id="web_pages">
+           </div>
+        </section>
+
+       <!-- couses cart where items can be added and removed -->
+       <aside>
+
+         <div id="cart_holder">
+           <p id="total"></p>
+         </div>
+       </aside>
+
+   </div>
+
+   <div id="courses_structure_holder">
+     <section>
+
+       <!-- animation courses section -->
+        <div id="animation">
+        </div>
+
+        <!-- created_web_page -->
+        <div id="created_web_page">
+        </div>
+     </section>
+   </div>
+
+   <div id="courses_structure1_holder">
+      <section>
+
+        <!-- createMusic courses -->
+        <div id="created_music_page"></div>
+
+        <!-- created animation courses -->
+        <div id="created_animation_page"></div>
+      </section>
+   </div>
+
+    <!-- new section for the footer -->
+    <div id="footer_holder">
+      <table>
+        <tr>
+          <td><h2>Legal</h2></td>
+          <td><h2>Company</h2></td>
+          <td><h2>Help & Support</h2></td>
+          <td><h2>Contact</h2></td>
+        </tr>
+
+        <tr>
+          <td>Code for Cape Town is a project of Innovate
+            South Africa, which is a registered non-profit (137806NPO)
+            and a Public Beneficiary Organisation (930050338)
+          </td>
+
+          <td>
+            <ul type="square">
+              <li>About us</li>
+              <li>Contact us</li>
+              <li>Blog</li>
+              <li>Testimonials</li>
+              <li>Affiliate program</li>
+            </ul>
+          </td>
+
+          <td>
+            <ul type="square">
+              <li>Help centre</li>
+              <li>Free simple template</li>
+              <li>Refund policy</li>
+              <li>Report span</li>
+            </ul>
+          </td>
+
+
+          <td id="removing_list">
+            <ul>
+              <li><button><i class="fa fa-phone" style="font-size:15px;color:gray"></i></button> (021) 685 0991</li>
+              <li><button><i class="fa fa-envelope" style="font-size:15px;color:gray"></i></button> info@code4ct.com</li>
+              <li><button><i class="fa fa-map-marker" style="font-size:15px;color:gray"></i></button> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915 </li>
+            </ul>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <footer id="footer_section">
+       <table>
+          <tr>
+            <td id="footer_aligned_left">
+              <p>copyright 2017 PRIVATE POLICY</p>
+            </td>
+
+            <td id="footer_aligned_center"><i class="fa fa-hand-pointer-o"></i><a class="scrollToTop" href="#">Scrolling Up</a></td>
+
+            <td id="footer_aligned_right">
+                Follow us:
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+
+            </td>
+          </tr>
+       </table>
+    </footer>
+
+
+    <script type="text/javascript">
+
+     // creating a function for the title
+     function course (title,description,duration,cost){
+
+          this.title = title;
+          this.description = description;
+          this.duration = duration;
+          this.cost = cost;
+       }
+
+       // creating a variable for the music course number 1 left
+       var music = new course("Intro to Coding:Music","Code a song using SonicPi software on a Raspberry Pi computer.","Duration:3 hours","Cost:R250");
+
+       // calling out the code to display the music section in my id div call music_holder number 1 left
+
+       document.getElementById('music_holder').innerHTML= "<h1>" + music.title + "</h1>" + "<p>" + music.description+ "</p>" + "<p>"+ music.duration + "</p>" + "<p>" + music.cost + "</p>" + "<button id='button_add'>" + " Add to cart" + "</button>" + "<button id='button_remove'>" +  "Remove item" + "</button>";
+
+       // this is jquery used to add items to my cart number 1 left
+       $(document).ready(function(){
+         $('#button_add').click(function(){
+          $("<p class=\"music\">Title:Music <br> Cost:R250 <br> Duration:3 Hours</p>").appendTo("#cart_holder");
+         });
+       });
+
+       // this is used to remove the button number 1 left
+       document.getElementById('button_remove').onclick= function() {
+         console.log('removing button...')
+         $('#cart_holder .music').hide();
+       }
+
+
+       // creating my web page courses number 1 right
+       var web_pages = new course("Intro to Coding:Web Pages","Code a simple one-page website using HTML and JQuery.","Duration:3 hours","Cost:R250");
+
+       // calling out the code to display the web page section in my div called web_pages number 1 right
+
+       document.getElementById('web_pages').innerHTML= "<h1>" + web_pages.title + "</h1>" + "<p>" + web_pages.description + "</p>" + web_pages.duration + "</p>" + "<p>" + web_pages.cost + "</p>" + "<button id='button_add_right' value='250'>" + " Add to cart " + "</button>" + "<button id ='button_remove_right' value='250'>" + "Remove item" + "</button>";
+
+
+        // web page add button number 1 right
+        $(document).ready(function(){
+          $('#button_add_right').click(function(){
+            $("<p class=\"web_page\">Title:Web Developer <br> Cost:R250 <br> Duration:3 Hours</p>").appendTo("#cart_holder");
+          });
+        });
+
+       // inserting the removed buttons number 2 right
+
+       document.getElementById('button_remove_right').onclick= function() {
+         console.log('removing button...')
+         $('#cart_holder .web_page').hide();
+       }
+
+
+       // creating my web page courses number 2 left
+       var animation = new course("Intro to Coding:Animation","Create a 2D animation using coding language JavaScript.","Duration:3 hours","Cost:R250");
+
+       // calling out the code to display the web page section in my div called web_pages number 2 right
+       document.getElementById('animation').innerHTML= "<h1>" + animation.title + "</h1>" + "<p>" + animation.description + "</p>" + animation.duration + "</p>" + "<p>" + animation.cost + "</p>" + "<button id='button_add3_left' value='250'>" + " Add to cart " + "</button>" + "<button id ='button_remove3_right' value='250'>" + "Remove item" + "</button>";
+
+       // animation page add button number 2 left
+       $(document).ready(function(){
+         $('#button_add3_left').click(function(){
+           $("<p class=\"animation\"> Title:Animation <br> Cost:R250 <br> Duration:3 Hours</p>").appendTo("#cart_holder");
+         });
+       });
+
+       // this is used to remove the button number 2 left
+       document.getElementById('button_remove3_right').onclick= function() {
+         console.log('removing button...')
+         $('#cart_holder .animation').hide();
+       }
+
+
+       // creating my Create with Code: Web Pages courses number 3 left
+       var createWeb = new course("Create with Code: Web Pages","Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.","Duration:3 hours","Cost:R960");
+
+       // calling out the code to display the web page section in my div called created web_pages number 3 right
+       document.getElementById('created_web_page').innerHTML= "<h1>" + createWeb.title + "</h1>" + "<p>" + createWeb.description + "</p>" + createWeb.duration + "</p>" + "<p>" + createWeb.cost + "</p>" + "<button id='button_add4_left' value='960'>" + " Add to cart " + "</button>" + "<button id ='button_remove4_right' value='960'>" + "Remove item" + "</button>";
+
+       // created_web_page  add button number 3 left
+       $(document).ready(function(){
+         $('#button_add4_left').click(function(){
+           $("<p class=\"createWeb\"> Title:Create Web Pages <br> Cost:R960 <br> Duration:3 Hours</p>").appendTo("#cart_holder");
+         });
+       });
+
+       // this is used to remove the button number 3 left
+       document.getElementById('button_remove4_right').onclick= function() {
+         console.log('removing button...')
+         $('#cart_holder .createWeb').hide();
+       }
+
+       // creating my Create with Code: Web Pages courses number 4 left
+       var createWeb = new course("Create with Code: Web Pages","Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.","Duration:3 hours","Cost:R960");
+
+       // calling out the code to display the web page section in my div called created web_pages number 4 right
+       document.getElementById('created_web_page').innerHTML= "<h1>" + createWeb.title + "</h1>" + "<p>" + createWeb.description + "</p>" + createWeb.duration + "</p>" + "<p>" + createWeb.cost + "</p>" + "<button id='button_add4_left' value='960'>" + " Add to cart " + "</button>" + "<button id ='button_remove4_right' value='960'>" + "Remove item" + "</button>";
+
+       // created_web_page  add button number 4 left
+       $(document).ready(function(){
+         $('#button_add4_left').click(function(){
+           $("<p class=\"createWeb\"> Title:Created Web <br> Cost:R960 <br> Duration:3 Hours</p>").appendTo("#cart_holder");
+         });
+       });
+
+       // this is used to remove the button number 4 left
+       document.getElementById('button_remove4_right').onclick= function() {
+         console.log('removing button...')
+         $('#cart_holder .createWeb').hide();
+       }
+
+
+       // creating my Create with Code: Web Pages courses number 5 left
+       var createMusic = new course("Create with Code: Music","Learn computer science principles by coding music with a Raspberry Pi computer.","Duration:3 hours","Cost:R960");
+
+       // calling out the code to display the web page section in my div called created web_pages number 5 right
+       document.getElementById('created_music_page').innerHTML= "<h1>" + createMusic.title + "</h1>" + "<p>" + createMusic.description + "</p>" + createMusic.duration + "</p>" + "<p>" + createMusic.cost + "</p>" + "<button id='button_add5_left' value='960'>" + " Add to cart " + "</button>" + "<button id ='button_remove5_right' value='960'>" + "Remove item" + "</button>";
+
+       // created_web_page  add button number 5 left
+       $(document).ready(function(){
+         $('#button_add5_left').click(function(){
+           $("<p class=\"createMusic\"> Title:Created Music <br> Cost:R960 <br> Duration:3 Hours</p>").appendTo("#cart_holder");
+         });
+       });
+
+       // this is used to remove the button number 5 left
+       document.getElementById('button_remove5_right').onclick= function() {
+         console.log('removing button...')
+         $('#cart_holder .createMusic').hide();
+       }
+
+
+       // creating my Create with Code: Web Pages courses number 6 left
+       var createAnimation = new course("Create with Code: Animation","Learn computer science principles by coding animations using JavaScript..","Duration:3 hours","Cost:R960");
+
+       // calling out the code to display the web page section in my div called created web_pages number 6 right
+       document.getElementById('created_animation_page').innerHTML= "<h1>" + createAnimation .title + "</h1>" + "<p>" + createAnimation .description + "</p>" + createAnimation .duration + "</p>" + "<p>" + createAnimation .cost + "</p>" + "<button id='button_add6_left' value='960'>" + " Add to cart " + "</button>" + "<button id ='button_remove6_right' value='960'>" + "Remove item" + "</button>";
+
+     // created_web_page  add button number 6 left
+     $(document).ready(function(){
+       $('#button_add6_left').click(function(){
+         $("<p class=\"createAnimation\"> Title:Created Animation <br> Cost:R960 <br> Duration: Hours</p>").appendTo("#cart_holder");
+       });
+     });
+
+    // this is used to remove the button number 6 left
+    document.getElementById('button_remove6_right').onclick= function() {
+      console.log('removing button...')
+      $('#cart_holder .createAnimation').hide();
+    }
+
+
+
+    // creating a variable for the cart
+    var cart = new course("Selected courses...");
+
+    document.getElementById('cart_holder').innerHTML = "<h1>" + cart.title+ "</h1>";
+
+    // this is used fo the smooth scroller
+    if ($('.scrollToTop')[0]){
+         $('.scrollToTop').click(function(){
+         $('html,body').animate({ scrollTop: 0 }, 3000);
+       });
+      }
+    </script>
+  </body>
+</html>
